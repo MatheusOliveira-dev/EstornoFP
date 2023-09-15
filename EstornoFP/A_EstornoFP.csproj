@@ -56,6 +56,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="frmAdicionarItemEstornoManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarItemEstornoManual.Designer.cs">
+      <DependentUpon>frmAdicionarItemEstornoManual.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdicionarItemEstornoManual.resx">
+      <DependentUpon>frmAdicionarItemEstornoManual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

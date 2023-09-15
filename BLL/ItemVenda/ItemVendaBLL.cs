@@ -25,9 +25,9 @@ namespace BLL.ItemVenda
                 " AND V.CDLOJA = I.CDLOJA" +
                 " AND V.CDLOJA = @CDLOJAV" +
                 " AND I.CDLOJA = @CDLOJAIV" +
-                " AND V.FP_AUTORIZACAO IS NOT NULL" +
-                " AND V.CDCONVENIO = (SELECT VALOR FROM PRC_BUSCA_PARAMETRO('CDCONVENIOFPOPULAR'))" +
-                " AND V.FP_AUTORIZACAO IS NOT NULL" +
+              //  " AND V.FP_AUTORIZACAO IS NOT NULL" +
+              //  " AND V.CDCONVENIO = (SELECT VALOR FROM PRC_BUSCA_PARAMETRO('CDCONVENIOFPOPULAR'))" +
+              //  " AND V.FP_AUTORIZACAO IS NOT NULL" +
                 " {0} = @TERMOPESQUISA " +
                 " AND V.DATA = @DATAV" +
                 " AND I.DATA = @DATAIV" +

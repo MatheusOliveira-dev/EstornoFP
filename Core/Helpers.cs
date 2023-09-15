@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Core
 {
@@ -39,7 +40,24 @@ namespace Core
                 }
 
             }
+
             return string.Empty;
+        }
+
+        public static bool ValidaValorIntTextbox(string valor)
+        {
+            if (int.TryParse(valor, out int resultado))
+                return true;
+            else
+                return false;
+        }
+
+        public static bool ValidaValorDoubleTextbox(string valor)
+        {
+            if (Double.TryParse(valor, out double resultado))
+                return true;
+            else
+                return false;
         }
     }
 }
